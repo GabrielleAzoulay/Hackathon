@@ -77,8 +77,7 @@ window.onload=function(){
         star.addEventListener("click",markStar);
     }
 
-    var button= document.getElementById("btn");
-    button.addEventListener("click",sendStars);
+
 
     function sendStars(){
         var grade=document.getElementById("grade");
@@ -102,11 +101,20 @@ window.onload=function(){
             this.classList.add("coral");
 
     }
+
+    var button2= document.getElementById("btn2");
+    button2.addEventListener("click",firstclick);
+
     function firstclick(){
-        localStorage.clickCounter = Number(localStorage.clickCounter)+1;
+        var page1= document.getElementsByClassName("page1");
+        var page2= document.getElementsByClassName("page2");
+        for(var i=0;i<page1.length;i++){
+            page1[i].style.display="none";
+            page2[i].style.display="block";
+        }
     }
     // var click1=document.getElementById("clickable");
-    document.getElementById("clickable").addEventListener("onclick",firstclick);
+    // document.getElementById("clickable").addEventListener("onclick",firstclick);
 
 
 
