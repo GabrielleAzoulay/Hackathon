@@ -199,7 +199,10 @@ a:hover{
 }
 
 .green{
-    /*background-color: lawngreen;*/
+    height:50px;
     width:100px;
     margin-left:100px;
+}
+.page2 {
+    display: none;
 }

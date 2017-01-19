@@ -1,6 +1,25 @@
 window.onload=function(){
     var arrow=document.getElementById("arr1");
     arrow.addEventListener("click",seeMore);
+    localStorage.clickCounter = 0;
+
+    if(localStorage.clickCounter > 0 ) {
+
+    // document.getElementById("clickable")
+    //
+    // onclick="document.getElementById('clickable').style.display"
+
+    var page1 =   document.getElementsByClassName("page1");
+    var page2 =   document.getElementsByClassName("page2");
+
+    for (var i =0; i < page1.length; i++) {
+        page1[i].style.display = "none";
+    }
+    for (var j =0; j < page2.length; j++) {
+        page2[j].style.display = "block";
+    }
+
+    }
 
     function seeMore(){
         var moreVideo=document.getElementById("more_videos");
@@ -83,6 +102,11 @@ window.onload=function(){
             this.classList.add("coral");
 
     }
+    function firstclick(){
+        localStorage.clickCounter = Number(localStorage.clickCounter)+1;
+    }
+    // var click1=document.getElementById("clickable");
+    document.getElementById("clickable").addEventListener("onclick",firstclick);
 
 
 
