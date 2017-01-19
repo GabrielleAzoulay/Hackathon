@@ -70,7 +70,9 @@ body{
 #third{
     display:none;
 }
-
+#pictures{
+    display:none;
+}
 
 .star{
     font-size:40px;
@@ -93,4 +95,8 @@ body{
 #grade{
 
     text-align:center;
+}
+
+#thanks{
+    display:none;
 }

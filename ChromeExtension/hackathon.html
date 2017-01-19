@@ -56,7 +56,7 @@
             <div id="Video4">
                 <!--video 4-->
                 <iframe src="https://www.youtube.com/embed/AaIdperUu-A" frameborder="0" allowfullscreen class="video"> </iframe>
-                <img src="Images/arrowup.png" alt="more images" class="arrow" id="arr2">
+
             </div>
         </div>
 
@@ -65,7 +65,7 @@
         <div id="usersGrades"></div>
         <div id="give_a_grade"></div>
     </div>
-    <div class="row row_border ">
+    <div class="row row_border " id="pictures">
         <div class="row">
             <div class="col-xs-4">
                 <img src="Images/Python1.png" alt="Brain.io" class="centered field_expert_img">
@@ -88,10 +88,11 @@
                 <img src="Images/Python6.png" alt="Brain.io" class="centered field_expert_img">
             </div>
         </div>
+        <img src="Images/arrowup.png" alt="more images" class="arrow" id="arr2">
     </div>
 
     <div id="grade">
-        <span class="centered get_font suggestions_title" >Give your grade </span>
+        <h5 class="centered get_font">Please rate how relevant this page is for you</h5>
         <div class="stars-holder">
             <i class="fa fa-star star" data-rating="5"></i>
             <i class="fa fa-star star" data-rating="4"></i>
@@ -100,6 +101,9 @@
             <i class="fa fa-star star" data-rating="1"></i>
         </div>
         <button type="button" class="btn btn-primary" id="btn" onclick="document.getElementsByClassName('star').style.color = 'red'">Send</button>
+    </div>
+    <div id="thanks">
+        <span class="centered get_font suggestions_title" >Thanks !</span>
     </div>
 
 
