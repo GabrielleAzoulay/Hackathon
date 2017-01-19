@@ -27,7 +27,7 @@ body{
 
 .arrow{
     width:20px;
-    margin-left:140px ;
+    margin-left:130px ;
 }
 
 #more_videos{
@@ -36,10 +36,14 @@ body{
 
 .Brainio_title{
     width:11em;
-    height: 3.5em;
+    height: 3em;
 }
 .suggestions_title{
+    padding-top: 10px;
     font-size: 1.2em;
+    padding-bottom: 10px;
+    font-family: Montserrat-SemiBold, sans-serif;
+    text-align: left;
 }
 .centered {
     text-align: center;
@@ -55,8 +59,8 @@ body{
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
-.give_padding:hover{
-    color:#4DA0F7;
+a:hover{
+    color:white;
 }
 .row_border {
     border: 1px solid black;
@@ -81,11 +85,11 @@ body{
 
 
 .star.selected{
-    color:yellow;
+    color: #ff8A65;
 }
 
 .star.selected ~ .star{
-    color:yellow;
+    color:#ff8A65;
 }
 
 .stars-holder{
@@ -99,4 +103,103 @@ body{
 
 #thanks{
     display:none;
+}
+
+.powerTitle{
+    text-align: left;
+    font-size: 12px;
+    padding-left: 10px;
+    font-family: Montserrat-Light, sans-serif;
+}
+
+.articles_title{
+    font-family: Montserrat-SemiBold, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 18px;
+}
+
+.row_border_one{
+    background-color: #4DA0F7;
+}
+
+.row_border_two{
+    background-color: #A2CDFB;
+}
+
+.row_border_three {
+    background-color: #CAE3FD;
+}
+
+.thanksInput{
+    font-family: Montserrat-SemiBold, sans-serif;
+    color: #4DA0F7;
+}
+
+#extraPadding{
+    height:10px;
+}
+
+.Searches_title{
+    padding-top: 10px;
+    font-family: Montserrat-SemiBold, sans-serif;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+.row_border_four{
+    background-color: #4DA0F7;
+    margin: 0px;
+}
+
+.row_border_five{
+    background-color: #A2CDFB;
+    margin: 0px;
+}
+
+#videoRel{
+    font-family: Montserrat-SemiBold, sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+.heart{
+    padding-left: 25px;
+    padding-bottom: 10px;
+    text-align: right;
+}
+.bookmark{
+    padding-right: 25px;
+    padding-bottom: 10px;
+    text-align:right;
+    padding-left: 200px;
+}
+.article{
+    width:290px;
+    height:200px;
+}
+
+.inline{
+    display:inline-block;
+}
+
+.coral{
+    color:#ff8A65;
+}
+
+.size{
+    width:50px;
+}
+
+.black{
+    background-color: black;
+    width:100px;
+    margin-left:100px;
+}
+
+.green{
+    /*background-color: lawngreen;*/
+    width:100px;
+    margin-left:100px;
 }

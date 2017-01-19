@@ -5,8 +5,8 @@ window.onload=function(){
     function seeMore(){
         var moreVideo=document.getElementById("more_videos");
         moreVideo.style.display="block";
-        var pictures=document.getElementById("pictures");
-        pictures.style.display="block";
+        // var pictures=document.getElementById("pictures");
+        // pictures.style.display="block";
         arrow.style.display="none";
 
     }
@@ -16,8 +16,8 @@ window.onload=function(){
     function seeLess(){
         var lessVideo=document.getElementById("more_videos");
         lessVideo.style.display="none";
-        var pictures=document.getElementById("pictures");
-        pictures.style.display="none";
+        // var pictures=document.getElementById("pictures");
+        // pictures.style.display="none";
         arrow.style.display="block";
     }
 
@@ -62,13 +62,25 @@ window.onload=function(){
     button.addEventListener("click",sendStars);
 
     function sendStars(){
-        // for(var i=0;i<stars.length;i++){
-        //     stars[i].classList.remove("selected");
-        // }
         var grade=document.getElementById("grade");
         grade.style.display="none";
         var thanks=document.getElementById("thanks");
         thanks.style.display="block";
+
+    }
+
+    var heart=document.getElementsByClassName("heart");
+    for(var j=0;j<heart.length;j++){
+        heart[j].addEventListener("click",like);
+    }
+    var bookmark=document.getElementsByClassName("bookmark");
+    for(var k=0;k<bookmark.length;k++){
+        bookmark[k].addEventListener("click",like);
+    }
+
+
+    function like(e){
+            this.classList.add("coral");
 
     }
 
